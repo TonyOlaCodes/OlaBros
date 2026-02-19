@@ -469,7 +469,7 @@ function renderCartSidebar() {
                         <span style="font-weight: 800; color: var(--text-grey);">Total Amount</span>
                         <span style="font-weight: 950; font-size: 24px; color: var(--text-dark);">${cur()}${subtotal.toFixed(2)}</span>
                     </div>
-                    <button class="btn btn-primary" id="checkoutBtn" style="width: 100%; font-size: 18px;" onclick="setView('checkout')">Review & Pay</button>
+                    <button class="btn btn-primary" id="checkoutBtn" style="width: 100%; font-size: 18px;" onclick="state.cartOpen = false; setView('checkout')">Review & Pay</button>
                 </div>
             ` : ''}
         </div>
