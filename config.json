@@ -15,6 +15,6 @@
         "currency": "€",
         "tableNumber": "07",
         "allowNotes": true,
-        "enableMagicPick": false
+        "enableMagicPick": true
     }
 }

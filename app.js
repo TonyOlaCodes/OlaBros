@@ -1057,6 +1057,7 @@ window.confirmCustomization = () => {
 
         if (state.editingIndex !== null) {
             state.cart[state.editingIndex] = finalItem;
+            state.cartOpen = true; // Bring back cart after saving changes
         } else {
             addItemToCart(finalItem);
         }
@@ -1105,6 +1106,7 @@ window.updateQty = (index, delta) => {
 window.toggleCart = (v) => { state.cartOpen = v; render(); };
 
 window.editCartItem = (i) => {
+    state.cartOpen = false; // Hide cart when customizing
     const itm = state.cart[i];
     openCustomize(itm.id, i);
 };
@@ -1116,7 +1118,11 @@ function getCategoryForItem(id) {
     return '';
 }
 
-window.closeModal = () => { state.customizingItem = null; render(); };
+window.closeModal = () => { 
+    if (state.editingIndex !== null) state.cartOpen = true; // Bring back cart if we were editing
+    state.customizingItem = null; 
+    render(); 
+};
 
 window.callWaiter = () => alert(`Staff on their way to Table #${table()}!`);
 
