@@ -26,17 +26,18 @@ body {
     color: var(--text-dark);
     line-height: 1.4;
     overflow-x: hidden;
+    font-size: 14px; /* Reduced from default for more space */
 }
 
 .container {
-    max-width: 600px; /* Mobile-first container for QR ordering feel */
+    max-width: 500px; /* Slightly tighter for better mobile focus */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px; /* Reduced padding */
 }
 
 /* Header */
 .header {
-    height: 72px;
+    height: 64px; /* Reduced from 72px */
     background: var(--bg-white);
     display: flex;
     justify-content: space-between;
@@ -59,7 +60,7 @@ body {
     padding: 16px 20px;
     scrollbar-width: none;
     position: sticky;
-    top: 72px;
+    top: 64px; /* Match new header height */
     background: var(--bg-white);
     z-index: 999;
 }
@@ -78,13 +79,13 @@ body {
 .categories::-webkit-scrollbar { display: none; }
 
 .cat-chip {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced from 10/20 */
     background: var(--bg-grey);
     border-radius: 50px;
     white-space: nowrap;
     cursor: pointer;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px; /* Reduced from 14 */
     transition: all 0.2s ease;
 }
 
@@ -105,8 +106,8 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
     display: flex;
-    padding: 12px;
-    gap: 16px;
+    padding: 10px; /* Reduced from 12px */
+    gap: 12px; /* Reduced from 16px */
     box-shadow: var(--shadow);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -313,24 +314,31 @@ body {
 }
 
 /* Cart Sidebar */
+/* Cart Overlay - Floating top right */
 .cart-sidebar {
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    padding-bottom: var(--safe-bottom);
+    top: 80px; /* Below header */
+    right: 15px;
+    width: calc(100% - 30px);
+    max-width: 340px;
+    max-height: 70vh;
     background: var(--bg-white);
     z-index: 2500;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transform: translateY(-20px) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
     flex-direction: column;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border: 1px solid var(--border);
 }
 
 .cart-sidebar.open {
-    transform: translateX(0);
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Buttons */
@@ -469,7 +477,7 @@ input:checked + .slider:before {
 }
 
 .animate-up {
-    animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* New Add Button Circle */

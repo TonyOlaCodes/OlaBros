@@ -147,8 +147,8 @@ function render() {
             ${state.view === 'account' ? renderAccount() : ''}
         </main>
 
-        <button class="btn" onclick="callWaiter()" style="position: fixed; bottom: calc(var(--safe-bottom) + 4px); left: 24px; background: var(--accent); color: var(--text-dark); border-radius: 50%; width: 56px; height: 56px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100; display: flex; align-items: center; justify-content: center;">
-            <ion-icon name="hand-right" style="font-size: 24px;"></ion-icon>
+        <button class="btn" onclick="callWaiter()" style="position: fixed; bottom: 32px; left: 20px; background: var(--accent); color: var(--text-dark); border-radius: 50%; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); z-index: 100; display: flex; align-items: center; justify-content: center; -webkit-tap-highlight-color: transparent;">
+            <ion-icon name="hand-right" style="font-size: 22px;"></ion-icon>
         </button>
 
         ${renderCustomModal(wasModalOpen)}
