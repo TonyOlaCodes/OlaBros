@@ -1,0 +1,20 @@
+{
+    "restaurantName": "McDonald's",
+    "theme": {
+        "primary": "#db0007",
+        "accent": "#ffbc0d",
+        "bgGrey": "#f5f5f7",
+        "textDark": "#1d1d1f",
+        "textGrey": "#86868b"
+    },
+    "branding": {
+        "logoHtml": "M<span style=\"color: var(--accent);\">c</span>Donald's",
+        "favicon": "https://www.mcdonalds.com/favicon.ico"
+    },
+    "settings": {
+        "currency": "€",
+        "tableNumber": "07",
+        "allowNotes": true,
+        "enableMagicPick": false
+    }
+}

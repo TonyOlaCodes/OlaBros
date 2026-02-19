@@ -1,0 +1,31 @@
+{
+    "burgers": [
+        { "id": 1, "name": "Big Mac", "price": 4.95, "desc": "Two 100% beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun.", "tags": ["Iconic"], "kcal": 550, "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=400&h=300", 
+          "ingredients": { "Beef Patty": 2, "Big Mac Sauce": 1, "Lettuce": 1, "Cheese": 1, "Pickles": 1, "Onions": 1 },
+          "allergenTags": ["gluten", "dairy"] },
+        { "id": 2, "name": "Quarter Pounder with Cheese", "price": 5.15, "desc": "100% fresh beef patty, two slices of cheese (Dairy), onions, pickles, mustard and ketchup.", "tags": ["Fresh Beef"], "kcal": 520, "img": "https://images.unsplash.com/photo-1594212699903-ec8a3ecc50f1?auto=format&fit=crop&q=80&w=400&h=300",
+          "ingredients": { "Beef Patty": 1, "Cheese": 2, "Onions": 1, "Pickles": 1, "Mustard": 1, "Ketchup": 1 },
+          "allergenTags": ["gluten", "dairy"] },
+        { "id": 4, "name": "Cheeseburger", "price": 1.80, "desc": "A 100% beef patty with American cheese (Dairy), pickles, and onions.", "tags": ["Classic"], "kcal": 300, "img": "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?auto=format&fit=crop&q=80&w=400&h=300",
+          "ingredients": { "Beef Patty": 1, "Cheese": 1, "Onions": 1, "Pickles": 1, "Mustard": 1, "Ketchup": 1 },
+          "allergenTags": ["gluten", "dairy"] }
+    ],
+    "chicken": [
+        { "id": 5, "name": "Chicken McNuggets (6 piece)", "price": 4.65, "desc": "6pc chicken in a crispy tempura batter.", "tags": ["Value"], "kcal": 250, "img": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&q=80&w=400&h=300", "allergenTags": ["gluten"] },
+        { "id": 21, "name": "Chicken McNuggets (9 piece)", "price": 5.85, "desc": "9pc chicken in a crispy tempura batter.", "tags": ["Popular"], "kcal": 375, "img": "https://images.unsplash.com/photo-1569058242252-62324e68884c?auto=format&fit=crop&q=80&w=400&h=300", "allergenTags": ["gluten"] },
+        { "id": 22, "name": "Chicken Selects (3pc)", "price": 6.25, "desc": "3 strips in a crispy coating.", "tags": ["Premium"], "kcal": 400, "img": "https://images.unsplash.com/photo-1623945359620-80491038ade4?auto=format&fit=crop&q=80&w=400&h=300", "allergenTags": ["gluten"] }
+    ],
+    "sides": [
+        { "id": 11, "name": "French Fries", "price": 2.80, "desc": "Perfectly salted and golden brown fries.", "tags": ["Classic"], "kcal": 320, "img": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400&h=300",
+          "ingredients": { "Salt": 1 }, "allergenTags": ["vegetarian", "vegan"] },
+        { "id": 23, "name": "Mozzarella Dippers", "price": 3.50, "desc": "Gooey mozzarella cheese sticks.", "tags": ["Limited"], "kcal": 310, "img": "https://images.unsplash.com/photo-1531390141319-3315a6767675?auto=format&fit=crop&q=80&w=400&h=300", "allergenTags": ["gluten", "dairy", "vegetarian"] }
+    ],
+    "drinks": [
+        { "id": 13, "name": "Coca-Cola", "price": 2.40, "desc": "Original Coca-Cola taste.", "kcal": 210, "img": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=400&h=300" },
+        { "id": 29, "name": "Coca-Cola Zero", "price": 2.40, "desc": "Zero sugar.", "kcal": 0, "img": "https://images.unsplash.com/photo-1543253687-c931c8e01820?auto=format&fit=crop&q=80&w=400&h=300" }
+    ],
+    "sauces": [
+        { "id": 50, "name": "BBQ Dip", "price": 0.50, "desc": "Classic smokehouse BBQ.", "kcal": 50, "img": "https://images.unsplash.com/photo-1594911772125-07619a973273?auto=format&fit=crop&q=80&w=200&h=150" },
+        { "id": 51, "name": "Sweet Curry Dip", "price": 0.50, "desc": "Tangy mild curry dip.", "kcal": 60, "img": "https://images.unsplash.com/photo-1594911772125-07619a973273?auto=format&fit=crop&q=80&w=200&h=150" }
+    ]
+}
