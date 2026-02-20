@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>OlaBro • Smart Ordering</title>
-    <!-- Premium Fonts -->
+    <title>Urban Table • Digital Menu</title>
+    <!-- Professional Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Essential Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Table Context for QR Sales Tool -->
-    <div id="qr-context-bar" style="background: var(--text-dark); color: white; text-align: center; font-size: 11px; font-weight: 800; padding: 4px; letter-spacing: 1px; text-transform: uppercase;">
-        Ordering from <span style="color: var(--accent);">Table #07</span> • Scan to pay enabled
+    <div id="app">
+        <!-- Rendered by app.js -->
     </div>
 
-    <div id="app"></div>
+    <!-- Configuration first -->
+    <script src="restaurant.config.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("mxJA5t9vuwGbNMKHR");
+       })();
+    </script>
+    <!-- Application logic -->
     <script src="app.js"></script>
 </body>
 </html>
